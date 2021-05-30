@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import { StyleSheet, View, Vibration } from 'react-native';
+import { StyleSheet, Vibration } from 'react-native';
 import { Card, Paragraph, Button, ProgressBar, Colors } from 'react-native-paper';
-import {Stopwatch} from 'react-native-stopwatch-timer';
+import { Stopwatch } from 'react-native-stopwatch-timer';
 
 
 const styles = StyleSheet.create({
@@ -13,49 +13,43 @@ const styles = StyleSheet.create({
         width: 300,
         overflow: 'hidden',
         marginBottom: 40
-    },
-    content: {
-        backgroundColor: '#FAE8E0',
-    },
-    cover: {
-        height: 220,
-    },
-    botao: {
-        alignItems: 'center',
-        flex: 1,
-        borderRadius: 50
-    },
-    texto: {
-        textAlign: 'center',
-        fontSize: 20,
-        flex: 1,
-        marginBottom: 20,
-        fontWeight: 'bold'
-    },
-    rectangle: {
-        height: 12,
-        width: '100%',
-        backgroundColor: 'white',
-        borderRadius: 20,
-        marginBottom: 15
-      },     
-    }
+        },
+        content: {
+            backgroundColor: '#FAE8E0',
+        },
+        cover: {
+            height: 220,
+        },
+        botao: {
+            alignItems: 'center',
+            flex: 1,
+            borderRadius: 50
+        },
+        texto: {
+            textAlign: 'center',
+            fontSize: 20,
+            flex: 1,
+            marginBottom: 20,
+            fontWeight: 'bold'
+        },  
+        }
 );
-const options = {
-    container: {
-      padding: 5,
-      borderRadius: 5,
-      flex: 1,
-      alignSelf: 'center',
-      marginBottom: 8
-    },
-    text: {
-      fontSize: 13,
-      color: 'black',
-      marginLeft: 7,
-      alignItems: 'center'
-    },
-  };
+
+    const options = {
+        container: {
+        padding: 5,
+        borderRadius: 5,
+        flex: 1,
+        alignSelf: 'center',
+        marginBottom: 8
+        },
+        text: {
+        fontSize: 13,
+        color: 'black',
+        marginLeft: 7,
+        alignItems: 'center'
+        },
+    };
 
 const CardQuote = ({task, background}) => {
     const [iconePlay, setIcon] = useState('play')

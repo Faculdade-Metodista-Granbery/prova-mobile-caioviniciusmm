@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, FlatList, StatusBar } from 'react-native';
+import { StyleSheet, SafeAreaView, FlatList, StatusBar } from 'react-native';
 import CardQuote from './components/card/card.component';
 import firebase from './services/firebase';
-import {useList} from 'react-firebase-hooks/database';
+import { useList } from 'react-firebase-hooks/database';
 
 export default function App() {
   const [cards, load, error] = useList (firebase.getAll());
